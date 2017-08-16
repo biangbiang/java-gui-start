@@ -1,6 +1,7 @@
 package ui;
 
 import java.awt.BorderLayout;
+import java.lang.Thread;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -11,7 +12,7 @@ public class WaitFrame extends JFrame {
 
 	public WaitFrame() {
 		// 设置名字
-		this.setTitle("java gui start");
+		this.setTitle("loading");
 		// 设置默认关闭属性（程序结束）
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		// 设置窗口大小
@@ -20,7 +21,7 @@ public class WaitFrame extends JFrame {
 		this.setResizable(false);
 		// 居中
 		FrameUtil.setFrameCenter(this);
-		add(new JLabel("加载中，请稍后...",JLabel.CENTER));
+		add(new JLabel("加载中，请稍后...", JLabel.CENTER));
 		setVisible(true);
 	}
 

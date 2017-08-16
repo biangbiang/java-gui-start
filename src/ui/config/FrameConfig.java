@@ -46,6 +46,12 @@ public class FrameConfig extends JFrame {
 	private JFrameMain jFrameMain;
 
 	public FrameConfig(WaitFrame wFrame,JFrameMain jFrameMain) {
+        try {
+            // thread to sleep for 1000 milliseconds
+            Thread.sleep(2000);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
 		wFrame.setVisible(false);
 		this.jFrameMain = jFrameMain;
 		setTitle("java gui start");
